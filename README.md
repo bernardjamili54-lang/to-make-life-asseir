@@ -10,19 +10,13 @@ This template includes built-in detection for missing CSS variables between your
 - **Modern Stack**: Vite + React + TypeScript + Tailwind CSS
 
 ## Available Scripts
-
-```bash
 # Run all linting (includes CSS variable check)
 npm run lint
-
 # Check only CSS variables
 npm run check:css-vars
-
 # Individual linting
 npm run lint:js    # ESLint
 npm run lint:css   # Stylelint
-```
-
 ## CSS Variable Detection
 
 The template includes a custom script that:
@@ -34,11 +28,15 @@ The template includes a custom script that:
 
 ### Example Output
 
-When CSS variables are missing:```
+When CSS variables are missing:
+❌ Undefined CSS variables found in tailwind.config.cjs:
+   --sidebar-background
+   --sidebar-foreground
+   --sidebar-primary
 
+Add these variables to src/index.css
 When all variables are defined:
-```
-```
+✅ All CSS variables in tailwind.config.cjs are defined
 
 ## How It Works
 
